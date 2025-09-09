@@ -2,15 +2,14 @@ import os
 import requests
 import pandas as pd
 import streamlit as st
-from dotenv import load_dotenv
 from langchain_groq import ChatGroq
 from langchain.prompts import PromptTemplate
 
 # --- Load Environment ---
-load_dotenv()
 SECTORS_API_KEY = st.secrets["SECTORS_API_KEY"]
 GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
-
+st.write(f"SECTORS_API_KEY: {st.secrets['SECTORS_API_KEY']}")
+st.write(f"GROQ_API_KEY: {st.secrets['GROQ_API_KEY']}")
 # --- Constants ---
 BASE_URL = "https://api.sectors.app/v1"
 HEADERS = {"Authorization": SECTORS_API_KEY}
