@@ -153,11 +153,6 @@ def risk_analysis(financials: pd.DataFrame):
         st.markdown(risks)
 
 
-
-
-
-
-
 # ===================== MAIN APP ===================== #
 def main():
     symbol = sidebar_selector()
