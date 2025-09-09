@@ -50,7 +50,7 @@ def sidebar_selector():
 
     st.sidebar.title("📌 Analytic Selection")
 
-    subsectors = fetch_data("subsectors/")
+    subsectors = fetch_data("subsectors")
     subsector_list = pd.DataFrame(subsectors)["subsector"].sort_values().tolist()
 
     ## streamlit UI
