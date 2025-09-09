@@ -74,8 +74,7 @@ def financial_summary(symbol: str):
                                          params={"n_quarters": "4",
                                                 "report_date": "2023-09-30"}))
 
-    prompt = 
-    """
+    prompt = """
         You are a skilled financial analyst.
         Based on the following quarterly financial data:
 
